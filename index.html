@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>namaste react</title>
+</head>
+<body>
+   <!-- <div id="root"></div> 
+   <script>
+    const head = document.createElement("h2");
+    head.innerHTML = "welcome to my vlog!";
+    const heading = document.getElementById("root");
+    heading.appendChild(head);
+   </script> -->
+   <div id="root"></div>
+
+   <!-- <div id="rohit"></div>
+   <script>
+    const love = document.createElement("p");
+    love.innerHTML = "'rohit loves sweety' 'and sweety also love rohit' 'but there is one problem' ";
+
+    const text = document.getElementById("rohit");
+    text.appendChild(love);
+   </script>  -->
+
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+   <!-- <script>
+    const heading = React.createElement("h2", {} , "hello world from react!");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading);
+   </script> -->
+
+   <script>
+    const parent = React.createElement("div", {id:"Parent"},React.createElement("div",{id:"child"} , React.createElement("h1",{}, "this is my nested program!")));
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(parent);
+   </script>
+
+</body>
+</html>
